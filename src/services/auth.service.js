@@ -39,7 +39,7 @@ class AuthService {
     }
 
     verifyUser(token){
-        return axios.post(API_URL + 'auth/verify-email/?token='+token);
+        return axios.get(API_URL + 'auth/verify-email/?token='+token);
     }
     forgotPassword(token){
         console.log(token);
